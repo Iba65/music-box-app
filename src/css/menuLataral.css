@@ -1,0 +1,105 @@
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: .2em;
+    margin-top: .2em;
+    width: 97%;
+    background-color: black;
+    border: solid 1px whitesmoke;
+    text-align: left;
+    min-height: 24.5em;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menuContainer img {
+    margin: 0;
+    padding: .1em;
+    text-align: left;
+    width: 1em;
+    background-color: rgb(247, 245, 245);
+    border-radius: .6em;
+}
+
+.opcMenuLateral {
+    box-sizing: content-box;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+}
+.musicControl {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: .2em;
+    width: 97%;
+    background-color: whitesmoke;
+    border: solid 1px rgb(197, 196, 196);
+    border-right: solid 2px rgb(130, 130, 130);
+    border-bottom: solid 2px rgb(130, 130, 130);
+    border-radius: .5em .5em 0 0;
+}
+.imgSongActive img {
+    margin-top: 15%;
+    padding: .3em .5em .1em .5em;
+    background-color: gray;
+    width: 9em;
+}
+.titleCd {
+    color: black;
+}
+.soudControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: .4em auto;
+    background-color: rgb(234, 233, 233);
+    border: solid 1px rgb(197, 196, 196);
+    width: 90%;
+    height: 1.5em;
+    border-radius: 1em;
+}
+.volumenLevel {
+    width: 80%;
+}
+.playControls {
+    margin-bottom: 10%;
+    background-color: rgb(234, 233, 233);
+    border: solid 1px rgb(197, 196, 196);
+    width: 10em;
+    height: 10em;
+    border-radius: 5em;
+    z-index: 2;
+}
+.imgprevio {
+    position: relative;
+    top: 4.3em;
+    left: .6em;
+}
+.imgctr {
+    position: relative;
+    top: 4.3em;
+    left: 1.5em;
+}
+.imgnext {
+    position: relative;
+    top: 4.3em;
+    left: 2.3em;
+}
+.imgplay {
+    position: relative;
+    top: .6em;
+    left: -4.2em;
+}
+.imgpause {
+    position: relative;
+    top: 5.2em;
+    left: 4.3em;
+}

@@ -1,0 +1,83 @@
+
+.containerDown {
+    position: fixed;
+    top: 55.3em;
+    left: 0;
+    width: 100%;
+    height: 3.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: rgb(0, 0, 0);
+    color:white;
+  }  
+.footerContainer {
+    margin-left: .3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    border-radius: 0 0 0 0;
+    width: 60%;
+    height: 3em;
+}
+.songTitle {
+    width: 28%;
+    margin-left: .3em;
+    color: black;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.songTitle p {
+    text-align: center;
+}
+.lineaProgreso {
+    padding: 0 1em;
+    width: 65%;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.songTime {
+    width: 7%;
+    margin-left: .3em;
+    color: black;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+.songTime p {
+    text-align: center;
+}
+.footerActions {
+    box-sizing: border-box;
+    margin: 0 .1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 0 .5em .5em 0;
+    width: 39.4%;
+    height: 3em;
+}
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: black ;
+}
+.copyright p{
+    padding-left: .2em;
+    padding-bottom: .2em;
+}
