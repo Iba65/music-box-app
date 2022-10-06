@@ -4,11 +4,11 @@ import {
     InputBase,
     IconButton,
     Divider,
-   } from './../utils/componentesMui';
+   } from '../utils/componentesMui';
 import {
   AccountCircleIcon,
   AudiotrackIcon
-} from './../utils/iconosMui';
+} from '../utils/iconosMui';
 
 export const SearchElement = () => {
   return (

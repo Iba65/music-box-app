@@ -1,0 +1,126 @@
+.albumsContainer {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    margin: 2em .5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 0;
+}
+.cardAlbumContent {
+    border-radius: 2em;    
+    border: solid 2px white;
+    width: 20em;
+    height: 9em;
+    margin: 1em .1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    z-index: 0;
+}
+.imgDiscoAlbums {
+    margin: 0 auto;
+}
+.imgDiscoAlbums img {
+    margin: 0;
+    padding: 0; 
+    border-radius: 2em 0 0 2em;
+    border-right: solid 1px white;
+    width: 9em;
+    height: 9em;
+}
+.datosAlbum {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.datosAlbum code {
+    padding: .2em;
+    background-color: white;
+    border-radius: 0 1em 1em 0;
+    color: black;
+    font: bold 18px Roboto;
+    min-height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.datosAlbum span {
+    margin: auto;
+    color: white;
+    font: bold 28px Roboto;
+}
+.iconoPlay {
+    position: relative;
+    top: 65px;
+    left: -19.5em
+}
+
+.cardActionSong {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    max-height: 24.5em;
+    overflow: hidden;
+}
+.songsList {
+    margin-top: .2em;
+    padding: .2em;
+    border-spacing: 0;
+    text-align: left;
+    text-decoration: none;
+    font: normal 15px Roboto;
+    color: white;
+    width: 100%;
+}
+.songsList tr {
+    margin: 0;
+    padding: 0;
+}
+.songPosition {
+    margin: 0 .1em;
+    padding: 0;
+    padding-right: .4em;
+    text-align: right;
+    width: 1.2em;
+    color:crimson;
+    background-color: rgb(189, 189, 189);
+    border-bottom: solid 1px black;
+}
+.songPosition:hover {
+    cursor: pointer;
+}
+.songTit {
+    margin: 0 .1em;
+    padding: 0;
+    padding-left: .2em;
+    height: 2em;
+    width: 13em;
+    color: white;
+    background-color: rgb(189, 189, 189);
+    border-bottom: solid 1px black;
+}
+.songTit:hover {
+    cursor: pointer;
+}
+.songt {
+    margin: 0 .1em;
+    padding: 0;
+    text-align: right;
+    width: 2.6em;
+    color: white;
+    font: bold 12px;
+    background-color: rgb(189, 189, 189);
+    border-bottom: solid 1px black;
+    padding-right: .2em;
+}
+.songt:hover {
+    cursor: pointer;
+}

@@ -6,7 +6,7 @@ import {
  import { 
   CopyrightIcon, 
  } from './../utils/iconosMui';
- import { SearchElement } from './../componets/SearchElement.js';
+ import { SearchElement } from './../components/SearchElement.js';
 
 function Footer() {
   const progress = 50;

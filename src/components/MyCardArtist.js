@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import * as React from 'react';
+import { NavLink } from "react-router-dom";
 import './../css/cardArtist.css';
 import { red } from '@mui/material/colors';
 import '@fontsource/roboto/300.css';
@@ -15,15 +16,23 @@ import {
     AlbumIcon,
     RemoveRedEyeIcon
 } from './../utils/iconosMui';
+import { fotoPerfil } from './../utils/functions';
 
-const fotoPerfil = require.context('./../data/artista', true);
 let selected = -1;
 
-export const MyCardArtist = ({artist, id, totar, cambiaAlto, actualizaHeight}) => {
+export const MyCardArtist = ({artist, id, totar, cambiaAlto, cambiaAltoCarga, actualizaHeight}) => {
+  const [masancho, setMasancho] = React.useState(0);
   //window.scrollTo(x-coord, y-coord)
   React.useEffect(()=> {
+    let scroll = window.scrollY;
+    const cardSelected = document.getElementsByClassName('cardContainer');
     if (totar === id) {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        const cardultimo = (cardSelected[totar-1].getBoundingClientRect().top + cardSelected[totar-1].getBoundingClientRect().height)+ scroll;
+        actualizaHeight(cardultimo+60);
+    }
+    if (cardSelected[id].getBoundingClientRect().left > masancho) {
+        setMasancho(cardSelected[id].getBoundingClientRect().left);
     }
   },[id])
   const handleExpandClick = (idice) => {
@@ -77,7 +86,9 @@ export const MyCardArtist = ({artist, id, totar, cambiaAlto, actualizaHeight}) =
             <FavoriteIcon />
             </IconButton>
             <IconButton aria-label="share">
-            <AlbumIcon />
+            <NavLink className="verMas" to={`/interpretes/discografy/${artist.id}`} exact="true">
+                <AlbumIcon />
+            </NavLink>
             </IconButton>
             <IconButton 
             aria-label="share"
@@ -92,9 +103,11 @@ export const MyCardArtist = ({artist, id, totar, cambiaAlto, actualizaHeight}) =
             <Typography variant="body2" color="text.secondary">
             {artist.informacion.Descripcion[0]}... 
             <br/>
-            <Button className='verMas' sx={{ bgcolor: red[500], mt: 2 }} variant="contained">
-                <RemoveRedEyeIcon/> ver mas
-            </Button>
+            <NavLink className="verMas" to={`/interpretes/${artist.id}`} exact="true">
+                <Button className='verMas' sx={{ bgcolor: red[500], mt: 2 }} variant="contained">
+                    <RemoveRedEyeIcon/> ver mas
+                </Button>
+            </NavLink>
             </Typography>
         </div>
       </div>

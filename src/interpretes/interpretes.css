@@ -1,0 +1,156 @@
+.bodyContainer {
+    margin: auto 0;
+    padding: 0;
+    padding-left: 3.6%;
+    background-color: black;
+    text-align: center;
+    min-height: 51.7em;
+    width: 100%;
+  }
+.bodyCardArtist {
+    padding: 0 .5em;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+ 
+.detailContainer {
+  margin: auto 0;
+  padding: 0;
+  padding-left: 1.5%;
+  background-color: black;
+  text-align: left;
+  min-height: 51.7em;
+  width: 95%;
+}
+.detailsHeader {
+  height: auto;
+}
+.line1 {
+  height: 2.5em;
+  background-color: black;
+}
+.line1 span {
+  padding: .2em 1em;
+  background-color: firebrick;
+  color: white;
+  border-radius: 1em;
+}
+.nameArtist {
+  width: 50%;
+  position: relative;
+  top: -45px;
+  left: 165px;
+  color: white;
+  font: bold 32px Roboto;
+}
+.line2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: .5em 1em;
+  color: white;
+  height: 3em;
+  background-color:firebrick;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.line2 code {
+  width: 30em;
+  margin-right: 60%;
+  font: bold 32px Roboto;
+}
+.icono {
+  width: 5em;
+  height: 1.6em;
+  border-radius: .3em;
+  background-color: white;
+  color: firebrick;
+  font: bold 20px Roboto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.img img {
+  position: relative;
+  top: -80px;
+  left: 45px;
+  width: 6em;
+  border:solid 2px firebrick;
+}
+.infoArtista {
+  position: relative;
+  top: -8em;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: dotted 2px grey;
+}
+.datosArtist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.part1 {
+  margin-left: 8em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font: bold 20px Roboto;
+  color: white;
+}
+.part1 a {
+  text-decoration: none;
+  color: white;
+}
+.part2 {
+  margin-left: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.columna, .columna1, .columna2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font: bold 20px Roboto;
+  color: white;
+}
+.columna1 {
+  margin-right: 1em;
+}
+
+.datosArtist code {
+  color:#61dafb;
+}
+.conciertoFoto {
+  width: 50%;
+}
+.conciertoFoto img {
+  width: 100%;
+  height: 30em;
+}
+.descriptionContent {
+  position: relative;
+  top: -100px;
+  padding: .5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  font: normal 20px Roboto;
+  text-align: justify;
+}

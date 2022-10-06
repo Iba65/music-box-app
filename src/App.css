@@ -1,47 +1,5 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-.bodyContainer {
-  margin: auto 0;
-  padding: 0;
-  width: 85%;
-  background-color: black;
-  text-align: center;
-  min-height: 51.7em;
-}
 
-.containerMiddel {
-  display: flex;
-  margin-top: 3.5em;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items:center;
-  width: 100%;
-  height: 31em;
-  background-color: black;
-  min-height: 51.7em;
-  flex-wrap: wrap;
-  padding-bottom: 9em;
-}
-.menuCont {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 12em;
-  border-right: solid 1px white;
-  background-color: black;
-  min-height: 52em;
-}
-.bodyContainer {
-  margin-left: 12em;
-  width: 100%;
-  height: auto;
+body {
   background-color: black;
 }
 .bodyPrincipal {
@@ -53,19 +11,6 @@
   align-items: flex-start;
   min-height: 52em;
 }
-.bodyCardArtist {
-  padding: 0 .5em;
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.bodyImg {
-  width: 30em;
-}
 
 .lineaProgreso {
   width: 100%;
@@ -75,4 +20,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+}
+.loader {
+  margin: 25%;
 }

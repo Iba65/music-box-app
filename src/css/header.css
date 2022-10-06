@@ -12,7 +12,7 @@
     z-index: 1;
   }
   .logoApp {
-    width: 7em;
+    width: 6em;
     position: absolute;
     top: .2em;
     left: .5em;
@@ -44,8 +44,27 @@
     color: rgb(225, 224, 224);
   }
   .opcMenuSup li:hover {
-    border-bottom: solid 2px cyan;
+    border-bottom: solid 2px #61dafb;
+    color:#61dafb;
     cursor: pointer;
+  }
+  .navlink {
+    margin: auto .5em;
+    padding: .1em .3em;
+    font-family: Roboto;
+    font-size: 20px;
+    color: rgb(225, 224, 224);
+    list-style: none;
+    text-decoration: none;
+  }
+  .navlink:hover {
+    border-bottom: solid 2px #61dafb;
+    color:#61dafb;
+    cursor: pointer;
+  }
+  .active {
+    font-weight: bold;
+    color: #61dafb;
   }
   .titleApp {
     width: 12%;

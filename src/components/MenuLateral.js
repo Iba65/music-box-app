@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // @flow 
-import * as React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './../css/menuLataral.css';
 import * as imagenes from './../utils/imagenesApp';
+import { portada } from './../utils/functions';
 import { 
   Fab,
   LinearProgress
@@ -14,20 +16,42 @@ import {
   VolumeUpIcon,
   VolumeOffIcon,
 } from './../utils/iconosMui';
+import { GeneralContext } from './../ContextApi/generalContext'
 
-import { ActionsMenu } from './ActionsMenu';
 
+export const MenuLateral = ({children}) => {
+  const { generalState } = useContext(GeneralContext);
+  const [portadaDisco, setPortadaDisco] = useState('');
+  const [songs, setSongs] = useState([]);
+  const progress = 0;
 
-export const MenuLateral = () => {
-  const progress = 60;
+  useEffect(()=> {
+    if (Object.keys(generalState.discSelect).length > 0) {
+      console.log('ipod-->',generalState);
+      setPortadaDisco(generalState.discSelect.imgdisco);
+    } else {
+      setPortadaDisco('');
+    }
+  },[generalState.discSelect])
+  useEffect(()=>{
+    if (Object.keys(generalState.songsAlbum).length > 0) {
+      setSongs(generalState.songsAlbum.canciones)
+      console.log('canciones -->', generalState.songsAlbum.canciones);
+    }
+  }, [generalState.songsAlbum])
+
     return (
       <>
         <div className='menuContainer'>
-          <ActionsMenu />
+          {children}
         </div>
         <div className="musicControl">
           <div className='imgSongActive'>
-            <img src={imagenes.sinPortada} alt='sin portada'/>
+            {portadaDisco !== '' ?
+              <img src={portada(`./${portadaDisco}`)} alt='Portada Disco' />
+            :
+              <img src={imagenes.sinPortada} alt='sin portada'/>
+            }
           </div>
           <div className='titleCd'>
             Titulo del CD

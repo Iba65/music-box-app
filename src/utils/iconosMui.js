@@ -16,6 +16,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AlbumIcon from '@mui/icons-material/Album';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import HeadsetIcon from '@mui/icons-material/Headset';
+import ReplyAllIcon from '@mui/icons-material/ReplyAll';
 
 export {
     SkipPreviousIcon,
@@ -36,4 +38,6 @@ export {
     MoreVertIcon,
     AlbumIcon,
     RemoveRedEyeIcon,
+    HeadsetIcon,
+    ReplyAllIcon,
 }
